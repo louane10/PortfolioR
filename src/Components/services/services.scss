@@ -1,0 +1,95 @@
+.services {
+  background: linear-gradient(180deg, #231b30, #2f3b3a);
+  height: 100%;
+  padding: 0 0 50px 0;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.textContainer1 {
+  right: 30px;
+  flex: 1;
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+ 
+  p {
+    font-weight: 200;
+    font-size: 20px;
+    color: #b3c4ae;
+    text-align: right;
+  }
+
+  hr {
+    width: 500px;
+    border: none;
+    border-top: 0.5px solid #a5db98;
+  }
+}
+.titleContainer {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px 0;
+  margin-top: 65px;
+
+  .title {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-size: 96px;
+    font-weight: 100;
+  }
+}
+
+.skill-bx {
+  text-align: center;
+  padding: 60px 50px;
+
+  .p1 {
+    padding: 0 170px;
+    padding-bottom: 75px;
+    font-size: 20px;
+  }
+  hr {
+    border: none;
+    border-top: 0.5px solid gray;
+  }
+}
+
+.skill-slider {
+  background-color: #0c1d18;
+  border-radius: 64px;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  flex: 2;
+  display: flex;
+  max-width: 1366px;
+  margin: auto;
+  
+
+  .item {
+    padding: 40px;
+
+    h5 {
+      font-size: 30px;
+    }
+  }
+}
+.skill-slider .item img {
+  margin: 0 auto 15px auto;
+}
+
+.background-image-left {
+  top: 28%;
+  position: absolute;
+  bottom: 0;
+  width: 40%;
+  z-index: -4;
+}

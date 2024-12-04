@@ -1,13 +1,18 @@
 .hero {
   height: calc(100vh - 100px);
   overflow: hidden;
-  background: linear-gradient(180deg, #0c1d18, #2f3b3a);
+  background: linear-gradient(180deg, #0c1d18, #3d3752);
   position: relative;
+  z-index: -1;
+  
 
   .wrapper {
     max-width: 1366px;
     height: 100%;
     margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
     .textContainer {
       width: 50%;
@@ -19,7 +24,7 @@
 
       h2 {
         font-size: 30px;
-        color: #798665;
+        color: #a5db98;
         letter-spacing: 10px;
       }
 
@@ -28,6 +33,7 @@
       }
 
       .buttons {
+        z-index: 100;
         button {
           padding: 20px;
           border: 1px solid white;
@@ -52,9 +58,31 @@
     top: 0;
     right: 0;
     width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
     img {
       width: 100%;
+      max-width: 900px;
+      max-height: 900px;
+
+      animation-name: floating;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+    }
+
+    @keyframes floating {
+      0% {
+        transform: translate(0, 0px);
+      }
+      50% {
+        transform: translate(0, 10px);
+      }
+      100% {
+        transform: translate(0, -0px);
+      }
     }
   }
 
@@ -66,5 +94,6 @@
     color: #ffffff09;
     width: 50%;
     font-weight: bold;
+    z-index: 1;
   }
 }
