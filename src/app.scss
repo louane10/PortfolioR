@@ -1,6 +1,11 @@
 html {
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y proximity;
     scroll-behavior: smooth;
+
+    @media (max-width: 738) {
+        scroll-snap-type:none;
+        scroll-behavior:unset;
+      }
 }
  
 * {
@@ -23,4 +28,31 @@ a {
 section {
     height: 100vh;
     scroll-snap-align: center;
+    @media (max-width: 738) {
+        scroll-snap-align:unset;
+    }
+}
+@media (max-width: 738px) {
+    html {
+        scroll-snap-type: none;
+    }
+
+    section {
+        scroll-snap-align: none;
+    }
+}
+@mixin mobile {
+    @media (max-width: 738px) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media (max-width: 1024px) {
+        @content;
+    }
+}
+@mixin desktop {
+    @media (max-width: 1500px) {
+        @content;
+    }
 }

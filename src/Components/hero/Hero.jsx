@@ -1,6 +1,7 @@
 import "./hero.scss";
 import { motion } from "framer-motion";
 
+
 const textVariants = {
   initial: {
     x: -500,
@@ -11,7 +12,7 @@ const textVariants = {
     opacity: 1,
     transition: {
       duration: 1,
-      straggerChildren: 0.1,
+      staggerChildren: 0.1,
     },
   },
   scrollButton: {
@@ -51,7 +52,9 @@ const Hero = () => {
           <motion.h1 variants={textVariants}>Développeuse Web Junior</motion.h1>
           <motion.div variants={textVariants} className="buttons">
             <motion.button variants={textVariants}>Voir mon CV</motion.button>
-            <motion.button variants={textVariants}>Me Contacter</motion.button>
+            <motion.button variants={textVariants}>
+            <a href="#Contact"> Me Contacter</a>
+            </motion.button>
           </motion.div>
           <motion.img
             variants={textVariants}

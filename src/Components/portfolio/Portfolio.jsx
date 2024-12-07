@@ -14,18 +14,21 @@ const items = [
     title: "Sophie Bluel, architecte d'intérieur",
     img: "/sophie.png",
     desc: "Création d'un site portfolio interactif en JavaScript. J'ai travaillé sur la page de présentation des projets, la connexion administrateur, et la fonctionnalité d’upload de médias.",
+    link: "https://github.com/louane10/P3",
   },
   {
     id: 3,
     title: "Kasa, location immobilière entre particuliers",
     img: "/kasa.png",
-      desc: "Application Web Responsive de location d'appartement complet en React. J'ai travaillé sur le design et l'ajout de composant, pour mettre en oeuvre un site avec une page de gestion d'erreur, un carrousel de présentation pour chaque card, et des animations avec Scss.",
+    desc: "Application Web Responsive de location d'appartement complet en React. J'ai travaillé sur le design et l'ajout de composant, pour mettre en oeuvre un site avec une page de gestion d'erreur, un carrousel de présentation pour chaque card, et des animations avec Scss.",
+    link: "https://github.com/louane10/P5",
   },
   {
     id: 4,
     title: "Mon Vieux Grimoire, site de notation de livres",
     img: "/Grimoire.jpeg",
     desc: "Conception du back-end d'une application permettant aux utilisateurs de noter des livres avec leur compte et de consulter les mieux notés.",
+    link: "https://github.com/louane10/P6",
   },
 ];
 
@@ -48,7 +51,7 @@ const Single = ({ item }) => {
           <motion.div className="textContainer" style={{ y }}>
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
-            <button>Voir</button>
+            <button><a href={item.link}>Voir</a></button>
           </motion.div>
         </div>
       </div>
