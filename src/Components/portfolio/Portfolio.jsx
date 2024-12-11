@@ -3,12 +3,12 @@ import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import { useRef } from "react";
 
 const items = [
-  {
-    id: 1,
-    title: "Sophie Bluel, architecte d'intérieur",
-    img: "/sophie.png",
-    desc: "LoremLorem ipsum dolor sit amet consectetur adipisicing elit. Atque perferendis hic autem beatae in tempora magnam ipsa velit, ipsum voluptas similique itaque quia? Molestiae nisi quas dolorem reiciendis hic temporibus.",
-  },
+  //{
+   // id: 1,
+ //   title: "Sophie Bluel, architecte d'intérieur",
+ //   img: "/sophie.png",
+  //  desc: "LoremLorem ipsum dolor sit amet consectetur adipisicing elit. Atque perferendis hic autem beatae in tempora magnam ipsa velit, ipsum voluptas similique itaque quia? Molestiae nisi quas dolorem reiciendis hic temporibus.",
+ // },
   {
     id: 2,
     title: "Sophie Bluel, architecte d'intérieur",

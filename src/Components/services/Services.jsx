@@ -106,42 +106,42 @@ const Services = () => {
                     className="item"
                     whileHover={{ color: "#B8C394" }}
                   >
-                    <img src="/public/meter2.svg" alt="Image" />
+                    <img src="/public/meter1.png" alt="Image" />
                     <h5>Html CSS</h5>
                   </motion.div>
                   <motion.div
                     className="item"
                     whileHover={{ color: "#B8C394" }}
                   >
-                    <img src="/public/meter2.svg" alt="Image" />
+                    <img src="/public/meter3.png" alt="Image" />
                     <h5>JavaScript</h5>
                   </motion.div>
                   <motion.div
                     className="item"
                     whileHover={{ color: "#B8C394" }}
                   >
-                    <img src="/public/meter2.svg" alt="Image" />
+                    <img src="/public/meter2.png" alt="Image" />
                     <h5>React</h5>
                   </motion.div>
                   <motion.div
                     className="item"
                     whileHover={{ color: "#B8C394" }}
                   >
-                    <img src="/public/meter2.svg" alt="Image" />
+                    <img src="/public/meter1.png" alt="Image" />
                     <h5>SEO</h5>
                   </motion.div>
                   <motion.div
                     className="item"
                     whileHover={{ color: "#B8C394" }}
                   >
-                    <img src="/public/meter2.svg" alt="Image" />
+                    <img src="/public/meter2.png" alt="Image" />
                     <h5>Git</h5>
                   </motion.div>
                   <motion.div
                     className="item"
                     whileHover={{ color: "#B8C394" }}
                   >
-                    <img src="/public/meter2.svg" alt="Image" />
+                    <img src="/public/meter1.png" alt="Image" />
                     <h5>Méthode Agile</h5>
                   </motion.div>
                 </Carousel>

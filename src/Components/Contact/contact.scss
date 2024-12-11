@@ -29,6 +29,7 @@
       text-align: center;
       align-items: center;
       margin-top: 70px;
+      padding-left: 0 !important;
     }
     @include desktop {
       padding-left: 30px;
@@ -39,7 +40,7 @@
       line-height: 88px;
 
       @include mobile {
-        font-size: 36px;
+        font-size: 46px !important;
       }
       @include desktop {
         font-size: 80px;

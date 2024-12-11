@@ -78,7 +78,7 @@
       flex-direction: column;
       text-align: center;
       gap: 0;
-      font-size: 40px;
+      font-size: 40px !important;
     }
     @include desktop {
       font-size: 70px;
@@ -150,6 +150,7 @@
 }
 .skill-slider .item img {
   margin: 0 auto 15px auto;
+  width: 80%;
 }
 
 .background-image-left {

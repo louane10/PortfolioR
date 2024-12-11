@@ -1,7 +1,6 @@
 import "./hero.scss";
 import { motion } from "framer-motion";
 
-
 const textVariants = {
   initial: {
     x: -500,
@@ -51,9 +50,17 @@ const Hero = () => {
           <motion.h2 variants={textVariants}>Louane Augsburger</motion.h2>
           <motion.h1 variants={textVariants}>Développeuse Web Junior</motion.h1>
           <motion.div variants={textVariants} className="buttons">
-            <motion.button variants={textVariants}>Voir mon CV</motion.button>
             <motion.button variants={textVariants}>
-            <a href="#Contact"> Me Contacter</a>
+              <a
+                href="/CV_LOUANE_AUGSBURGER.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Voir mon CV
+              </a>
+            </motion.button>
+            <motion.button variants={textVariants}>
+              <a href="#Contact"> Me Contacter</a>
             </motion.button>
           </motion.div>
           <motion.img

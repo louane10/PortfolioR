@@ -13,7 +13,7 @@ const Navbar = () => {
                     Louane
                 </motion.span>
                 <div className="social">
-                    <a href="#"><img src="/linkedin.png" alt="linkedin logo" /></a>
+                    <a href="https://www.linkedin.com/in/louane-augsburger-995955340" target="_blank"><img src="/linkedin.png" alt="linkedin logo" /></a>
                 </div>
             </div> 
         </div>
