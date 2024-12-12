@@ -24,6 +24,11 @@
     flex-direction: column;
     gap: 40px;
 
+    p{
+      font-size: 25px;
+      color: #aa9aff;
+    }
+
     @include mobile {
       gap: 20px;
       text-align: center;
