@@ -136,6 +136,9 @@
     @include mobile {
       padding: 20px;
     }
+    @include desktop {
+      padding: 20px;
+    }
 
     h5 {
       font-size: 30px;
@@ -151,6 +154,9 @@
 .skill-slider .item img {
   margin: 0 auto 15px auto;
   width: 80%;
+  @include desktop {
+    width: 50%;
+  }
 }
 
 .background-image-left {

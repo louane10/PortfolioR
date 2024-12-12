@@ -23,6 +23,7 @@ const Contact = () => {
   const formRef = useRef();
   const [error, setError] = useState(false);
   const [success, setSuccess] = useState(false);
+  const [messageSent, setMessageSent] = useState(false);
   const isInView = useInView(ref, { margin: "-100px" });
 
   
@@ -36,9 +37,14 @@ const Contact = () => {
       .then(
         (result) => {
           setSuccess(true);
+          setError(false);
+          setMessageSent(true);
+          formRef.current.reset(); 
+          setTimeout(() => setMessageSent(false), 5000);
         },
         (error) => {
           setError(true)
+          setSuccess(false);
         },
       );
   };
@@ -53,7 +59,8 @@ const Contact = () => {
         whileInView="animate"
     >
       <motion.div className="textContainer" variants={variants}>
-        <motion.h1 variants={variants}>Travaillons Ensemble</motion.h1>
+          <motion.h1 variants={variants}>Travaillons Ensemble</motion.h1>
+          {messageSent && <p className="success">Votre message a été envoyé avec succès !</p>}
         <motion.div className="item" variants={variants}>
           <h2>E-Mail</h2>
           <span>louane.augsburger@gmail.com</span>

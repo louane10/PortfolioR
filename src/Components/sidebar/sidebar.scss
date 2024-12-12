@@ -50,6 +50,9 @@
         @include mobile {
           display: none;
         }
+        @include desktop {
+          display: none;
+        }
       }
     }
 
